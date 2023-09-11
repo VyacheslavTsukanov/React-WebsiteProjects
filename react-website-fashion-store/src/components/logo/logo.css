@@ -1,0 +1,23 @@
+
+
+.logoIMG {
+    width: 100%;
+  }
+  
+  .logo {
+    background: rgba(87, 64, 181, 0.9); /*прозрачность фона*/
+  
+    text-align: center;
+    font-weight: bold;
+    width: 400px;
+    height: 70px;
+  
+    margin: auto; /*центрирование блока по горизонтали*/
+    position: absolute;
+    top: 300px;
+    left: 600px;
+    font-size: 50px;
+    color: #EEE8AA;
+  
+    font-family: 'Yeon Sung', cursive;
+  }
