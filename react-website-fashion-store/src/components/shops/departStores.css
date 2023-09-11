@@ -1,0 +1,34 @@
+
+/* Картинка и текст */
+
+.imgWH {
+    width: 660px;
+    height: 430px;
+    margin: 30px;
+}
+
+.img_and_txt {
+  display: flex;
+  margin: 50px;
+  text-align: justify;
+  background: #D3D3D3;
+}
+
+.txt {
+  margin: 20px;
+}
+
+.name_txt {
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Overpass', sans-serif;
+}
+
+.btn_more {
+  padding: 15px;
+  background: #000;
+}
+
+.btn_more:hover {
+  background: #808080;
+}
