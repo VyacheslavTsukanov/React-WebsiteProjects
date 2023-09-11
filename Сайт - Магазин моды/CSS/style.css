@@ -1,0 +1,250 @@
+*body {
+  margin: 0px;
+  padding: 0px;
+}
+#check-menu{
+    display: none;
+}
+label {
+  display: none;
+}
+.menu {
+  padding: 20px;
+  text-align: center;
+  background: rgb(49,50,57);
+}
+
+/* Подчеркивание ссылок */
+a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+  position: relative;
+}
+
+
+.menu a::before {
+  content: '';
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition: 0.2s;
+}
+.menu a:hover:before {
+  width: 100%;
+  left: 0;
+}
+
+/*Конец подчеркивание ссылок */
+
+.logoIMG {
+  width: 100%;
+}
+
+.logo {
+  background: rgba(87, 64, 181, 0.9); /*прозрачность фона*/
+
+  text-align: center;
+  font-weight: bold;
+  width: 400px;
+  height: 70px;
+
+  margin: auto; /*центрирование блока по горизонтали*/
+  position: absolute;
+  top: 300px;
+  left: 600px;
+  font-size: 50px;
+  color: #EEE8AA;
+
+  font-family: 'Yeon Sung', cursive;
+}
+
+/* Картинка и текст */
+
+.imgWH {
+    width: 660px;
+    height: 430px;
+    margin: 30px;
+}
+
+.img_and_txt {
+  display: flex;
+  margin: 50px;
+  text-align: justify;
+  background: #D3D3D3;
+}
+
+.txt {
+  margin: 20px;
+}
+
+.name_txt {
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Overpass', sans-serif;
+}
+
+.btn_more {
+  padding: 15px;
+  background: #000;
+}
+
+.btn_more:hover {
+  background: #808080;
+}
+
+footer {
+  color: #fff;
+  text-align: right;
+  padding: 30px;
+  background: rgb(49,50,57);
+}
+.foot  {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+.foot a img {
+  border-radius: 15px;
+}
+
+
+/* Адаптация под мобильные устройства */
+/* 1200 - большие мониторы, 768 - маленькие мониторы, 480 - планшет, 320 - телефон */
+/*
+  320 px — Мобильные устройства (портретная ориентация);
+  480 px — Мобильные устройства (альбомная ориентация);
+  600 px — Небольшие планшеты;
+  768 px — Планшеты (портретная ориентация);
+  1024 px — Планшеты (альбомная ориентация)/Нетбуки;
+  1280 px и более — PC.
+
+  240×320
+  320×240
+  320×480
+  480×360
+  360×640
+  480×800
+  768×1024
+  640×960
+  1280×800
+  2048×1536
+
+*/
+/* 480 - от планшета до ноутбука */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu {
+    padding: 20px;
+    font-size: 12px;
+    text-align: center;
+    background: rgb(49,50,57);
+  }
+
+
+  .logo {
+    background: rgba(87, 64, 181, 0.9); /*прозрачность фона*/
+
+    text-align: center;
+    font-weight: bold;
+    width: 400px;
+    height: 70px;
+
+    margin: auto; /*центрирование блока по горизонтали*/
+    position: absolute;
+    top: 250px;
+    left: 450px;
+    font-size: 50px;
+    color: #EEE8AA;
+
+    font-family: 'Yeon Sung', cursive;
+  }
+
+  /* Картинка и текст */
+
+  .imgWH {
+      width: 460px;
+      height: 330px;
+      margin-top: 50px;
+  }
+
+  .img_and_txt {
+    display: flex;
+    margin: 35px;
+    text-align: justify;
+    background: #D3D3D3;
+  }
+
+  .txt {
+    margin: 15px;
+  }
+
+  .name_txt {
+    text-align: center;
+    font-size: 35px;
+    font-family: 'Overpass', sans-serif;
+  }
+
+  footer {
+    color: #fff;
+    text-align: right;
+    padding: 30px;
+    background: rgb(49,50,57);
+
+  }
+}
+
+/* Маленькие мобильные устройства */
+@media screen and (min-width: 480px) and (max-width: 600px) {
+
+
+  /* Картинка и текст */
+
+  .imgWH {
+      width: 415px;
+      height: 230px;
+      margin: 10px;
+
+  }
+
+  .img_and_txt {
+    display: grid;
+    margin: 10px;
+    margin-top: 20px;
+    text-align: justify;
+    background: #D3D3D3;
+  }
+
+  .txt {
+    margin: 0px;
+  }
+  .txt_mar {
+    margin: 20px;
+  }
+  .name_txt {
+    text-align: center;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+  }
+
+  .btn_little_mobil {
+    width: 100px;
+    float: right;
+    margin-bottom: 20px;
+    padding: 10px;
+    background: #000;
+  }
+
+  .btn_more:hover {
+    background: #808080;
+  }
+
+  footer {
+    color: #fff;
+    text-align: right;
+    padding: 14px;
+    background: rgb(49,50,57);
+  }
+}
